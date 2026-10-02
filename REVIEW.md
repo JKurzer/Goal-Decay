@@ -111,7 +111,37 @@ All findings below are documentation-level. Nothing touches the thesis.
 - Survival thresholds at E=1e-5: 69315 / 17 / 11 / 7 / 8 (nf/k1/k2/k6/fact). 
 - Gambler's ruin: ρ=0.49 → 1/(1+e) = 0.268915; cliff at ρ=1/2 exact. 
 
-## Disposition
+## Resolution (2026-10-02, docs commit)
 
-No changes were made, per instructions. Issues 1–8 are candidates for a
-single future docs commit; nothing requires touching the proofs.
+Root cause of findings 1–3, 5, 8: README duplicated CORE.md's technical
+content and the copies drifted. Fix applied: **README is now a thin
+orientation layer** (question, one-paragraph answer, verdict table, complete
+document map, complete layout, reproduce); **CORE.md is the single source of
+technical truth**, now also hosting the genomic mapping table and the
+conditional-impossibility statement formerly unique to README. No Lean
+sources were modified.
+
+1. RESOLVED — README condensed; the Act III umbrella prose is gone. Anchor
+   points now live in CORE.md, distinguishing proved numerals
+   (`gen_two_k6_fails`, `gen_two_k5_passes`, `grow_fact_gen3`) from sim-only
+   values (`m(1) ≥ 7`, factorial gen-4, g=10 hierarchy).
+2. RESOLVED — the false Stirling gloss was README-only; condensed README and
+   CORE.md both use the correct `(g/e)^g` form.
+3. RESOLVED — the Act I off-by-one prose was removed in the condensation;
+   the correct divergence statement lives in CORE.md's Verdicts.
+4. RESOLVED — CORE.md exit 3 now reads `8.6×10¹⁶ (≈ 10¹⁷)`.
+5. RESOLVED — README layout now includes `GoalDecay/Core.lean` and the
+   library root; sim inventory lists all five scripts + CSVs.
+6. RESOLVED — SIMPLE.md now states 58 theorems / 44 axiom receipts. The root
+   commit message ("35 theorems") is historical and left as-is.
+7. RESOLVED — SIMPLE.md now reads "7 lines, 6 of them tactics".
+8. RESOLVED — hierarchy claim now cites `4.1×10⁻⁴³` (CORE.md anchor points).
+9. RESOLVED — CORE.md exit 2 attributes the bound to `retention_bound`, the
+   crossing to `metastability`.
+10. RESOLVED — Falsifier now says "axiom conjunction — in particular".
+11. RESOLVED — CORE.md cliff paragraph corrected (99.9% through g=6; 0.92 at
+    g=13 → 0.27 at g=17).
+12. RESOLVED — "buy survival roughly linearly in log L".
+13. NOTED — harmless over-hypotheses kept for API symmetry; no change.
+14. NOTED — `two_pow_gt` duplication is intentional (Core self-containment).
+15. NOTED — stale archived log, superseded by the fresh Verify run.

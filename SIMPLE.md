@@ -55,9 +55,11 @@ raised to a doubling exponent doesn't fade — it collapses. At `E = 9.1%`:
 * *External anchor* — works, but it must be maintained by something that does
   not decay. That is a person.
 
-**Fine print for experts.** Machine-checked: Lean 4 + Mathlib, 35 theorems, no
-sorries, axioms `[propext, Classical.choice, Quot.sound]`. This theorem is
-`GoalDecay.Models.feedback_mul` (its Lean proof is 7 lines); uniformity in the
+**Fine print for experts.** Machine-checked: Lean 4 + Mathlib, 58 theorems
+(44 with printed axiom receipts), no sorries, axioms `[propext,
+Classical.choice, Quot.sound]`. This theorem is
+`GoalDecay.Models.feedback_mul` (its Lean proof is 7 lines, 6 of them
+tactics); uniformity in the
 coupling strength is `GoalDecay.Stronger.feedbackPow_catastrophe`; the
 deepening-stack version is `GoalDecay.Growing.feedbackGrow_catastrophe`;
 linear decay is falsified in `GoalDecay.Theorems.linear_dies`. Simulations in

@@ -150,6 +150,9 @@ break an axiom (Act IV).
   stack table, hierarchy at g=10 (no-feedback 0.39; k=1: 1e-42; k=6 and
   factorial: below double-float underflow, ~1e-1.9M and ~1e-1.2M).
 
+**Start here:** `SIMPLE.md` — the whole result as a 10-line proof readable by a
+lay audience. `CORE.md` is the one-page technical version.
+
 ## Layout
 
 * `GoalDecay/Models.lean` — the three base recurrences, closed forms, bounds.

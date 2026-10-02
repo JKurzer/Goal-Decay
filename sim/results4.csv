@@ -1,0 +1,114 @@
+section,param,g,value,reference,note
+threshold_E*,no-feedback,2,2.929e-1,1 - 0.5**(1/2),X(G)=exact-int; exact
+threshold_E*,k=1,2,2.063e-1,1 - 0.5**(1/3),X(G)=exact-int; exact
+threshold_E*,k=2,2,1.591e-1,1 - 0.5**(1/4),X(G)=exact-int; exact
+threshold_E*,k=6,2,8.300e-2,1 - 0.5**(1/8),X(G)=exact-int; exact
+threshold_E*,factorial,2,1.591e-1,1 - 0.5**(1/4),X(G)=exact-int; exact
+threshold_E*,no-feedback,5,1.294e-1,1 - 0.5**(1/5),X(G)=exact-int; exact
+threshold_E*,k=1,5,2.211e-2,1 - 0.5**(1/31),X(G)=exact-int; exact
+threshold_E*,k=2,5,5.712e-3,1 - 0.5**(1/121),X(G)=exact-int; exact
+threshold_E*,k=6,5,2.474e-4,1 - 0.5**(1/2801),X(G)=exact-int; exact
+threshold_E*,factorial,5,1.340e-3,1 - 0.5**(1/517),X(G)=exact-int; exact
+threshold_E*,no-feedback,10,6.697e-2,1 - 0.5**(1/10),X(G)=exact-int; exact
+threshold_E*,k=1,10,6.773e-4,1 - 0.5**(1/1023),X(G)=exact-int; exact
+threshold_E*,k=2,10,2.348e-5,1 - 0.5**(1/29524),X(G)=exact-int; exact
+threshold_E*,k=6,10,1.472e-8,1 - 0.5**(1/47079208),X(G)=exact-int; exact
+threshold_E*,factorial,10,2.418e-8,1 - 0.5**(1/28671512),X(G)=exact-int; exact
+threshold_E*,no-feedback,16,4.240e-2,1 - 0.5**(1/16),X(G)=exact-int; exact
+threshold_E*,k=1,16,1.058e-5,1 - 0.5**(1/65535),X(G)=exact-int; exact
+threshold_E*,k=2,16,3.220e-8,1 - 0.5**(1/21523360),X(G)=exact-int; exact
+threshold_E*,k=6,16,1.251e-13,1 - 0.5**(1/5538821761600),X(G)=exact-int; exact
+threshold_E*,factorial,16,2.713e-15,1 - 0.5**(1/255483816212690),X(G)=exact-int; exact
+threshold_E*,no-feedback,20,3.406e-2,1 - 0.5**(1/20),X(G)=exact-int; exact
+threshold_E*,k=1,20,6.610e-7,1 - 0.5**(1/1048575),X(G)=exact-int; exact
+threshold_E*,k=2,20,3.976e-10,1 - 0.5**(1/1743392200),X(G)=exact-int; exact
+threshold_E*,k=6,20,5.212e-17,1 - 0.5**(1/13298711049602000),X(G)=exact-int; exact
+threshold_E*,factorial,20,1.889e-20,1 - 0.5**(1/36697695360790800022),X(G)=exact-int; exact
+threshold_E*,no-feedback,50,1.377e-2,1 - 0.5**(1/X),X(G)=bigint; exact
+threshold_E*,k=1,50,6.156e-16,1 - 0.5**(1/X),X(G)=bigint; exact
+threshold_E*,k=2,50,1.931e-24,1 - 0.5**(1/X),X(G)=bigint; exact
+threshold_E*,k=6,50,2.312e-42,1 - 0.5**(1/X),X(G)=bigint; exact
+threshold_E*,factorial,50,6.221e-67,1 - 0.5**(1/X),X(G)=bigint; exact
+threshold_E*,no-feedback,100,6.908e-3,1 - 0.5**(1/X),X(G)=bigint; exact
+threshold_E*,k=1,100,5.468e-31,1 - 0.5**(1/X),X(G)=bigint; exact
+threshold_E*,k=2,100,2.690e-48,1 - 0.5**(1/X),X(G)=bigint; exact
+threshold_E*,k=6,100,1.286e-84,1 - 0.5**(1/X),X(G)=bigint; exact
+threshold_E*,factorial,100,1.024e-160,1 - 0.5**(1/X),X(G)=bigint; exact
+threshold_E*,no-feedback,1000,6.929e-4,1 - 0.5**(1/X),X(G)=bigint; exact
+threshold_E*,k=1,1000,6.469e-302,1 - 0.5**(1/X),X(G)=bigint; asymptotic
+threshold_E*,k=2,1000,1.049e-477,1 - 0.5**(1/X),X(G)=bigint; asymptotic
+threshold_E*,k=6,1000,3.318e-845,1 - 0.5**(1/X),X(G)=bigint; asymptotic
+threshold_E*,factorial,1000,2.396e-2571,1 - 0.5**(1/X),X(G)=bigint; asymptotic
+inverse_G_max,no-feedback,693,0.001,,first G with I(G) < 0.5
+inverse_G_max,k=1,10,0.001,,first G with I(G) < 0.5
+inverse_G_max,k=2,7,0.001,,first G with I(G) < 0.5
+inverse_G_max,k=6,5,0.001,,first G with I(G) < 0.5
+inverse_G_max,factorial,6,0.001,,first G with I(G) < 0.5
+inverse_G_max,no-feedback,6932,0.0001,,first G with I(G) < 0.5
+inverse_G_max,k=1,13,0.0001,,first G with I(G) < 0.5
+inverse_G_max,k=2,9,0.0001,,first G with I(G) < 0.5
+inverse_G_max,k=6,6,0.0001,,first G with I(G) < 0.5
+inverse_G_max,factorial,7,0.0001,,first G with I(G) < 0.5
+inverse_G_max,no-feedback,69315,1e-05,,first G with I(G) < 0.5
+inverse_G_max,k=1,17,1e-05,,first G with I(G) < 0.5
+inverse_G_max,k=2,11,1e-05,,first G with I(G) < 0.5
+inverse_G_max,k=6,7,1e-05,,first G with I(G) < 0.5
+inverse_G_max,factorial,8,1e-05,,first G with I(G) < 0.5
+inverse_G_max,no-feedback,693147,1e-06,,first G with I(G) < 0.5
+inverse_G_max,k=1,20,1e-06,,first G with I(G) < 0.5
+inverse_G_max,k=2,13,1e-06,,first G with I(G) < 0.5
+inverse_G_max,k=6,8,1e-06,,first G with I(G) < 0.5
+inverse_G_max,factorial,9,1e-06,,first G with I(G) < 0.5
+verify_estimates,no-feedback,69315,1e-05,69315,OK 
+verify_estimates,k=1,17,1e-05,16-17,OK 
+verify_estimates,k=2,11,1e-05,10-11,OK 
+verify_estimates,k=6,7,1e-05,6-7,OK 
+verify_estimates,factorial,8,1e-05,7-8,OK 
+simple_goals_k1,L=1000,20,1.0000000000000002e-06,eps=1e-09,
+simple_goals_k1,L=1e+06,10,0.001,eps=1e-09,
+simple_goals_k1,L=1e+09,1,1.0,eps=1e-09,q = 0: instant death at G = 1
+simple_goals_k1,L=1e+12,-1,1000.0000000000001,eps=1e-09,E > 1: rate model breaks down (clamped sites die for sure)
+trajectory,k=1,0,1.0,0,E=1e-05
+trajectory,k=6,0,1.0,0,E=1e-05
+trajectory,k=1,1,0.99999,1,E=1e-05
+trajectory,k=6,1,0.99999,1,E=1e-05
+trajectory,k=1,2,0.999970000299999,3,E=1e-05
+trajectory,k=6,2,0.999920002799944,8,E=1e-05
+trajectory,k=1,3,0.999930002099965,7,E=1e-05
+trajectory,k=6,3,0.999430159570744,57,E=1e-05
+trajectory,k=1,4,0.999850010499545,15,E=1e-05
+trajectory,k=6,4,0.9960079694236991,400,E=1e-05
+trajectory,k=1,5,0.9996900464955053,31,E=1e-05
+trajectory,k=6,5,0.9723785067836709,2801,E=1e-05
+trajectory,k=1,6,0.9993701952602949,63,E=1e-05
+trajectory,k=6,6,0.8219456704884787,19608,E=1e-05
+trajectory,k=1,7,0.9987307997667283,127,E=1e-05
+trajectory,k=6,7,0.25345300369633483,137257,E=1e-05
+trajectory,k=1,8,0.9974532357705848,255,E=1e-05
+trajectory,k=6,8,6.718584044369466e-05,960800,E=1e-05
+trajectory,k=1,9,0.9949030084196342,511,E=1e-05
+trajectory,k=6,9,6.17930933744639e-30,6725601,E=1e-05
+trajectory,k=1,10,0.9898220978424772,1023,E=1e-05
+trajectory,k=6,10,3.44013284264002e-205,47079208,E=1e-05
+trajectory,k=1,11,0.9797379878994287,2047,E=1e-05
+trajectory,k=6,11,0.0,329554457,E=1e-05
+trajectory,k=1,12,0.9598769260679717,4095,E=1e-05
+trajectory,k=6,12,0.0,2306881200,E=1e-05
+trajectory,k=1,13,0.9213544995605665,8191,E=1e-05
+trajectory,k=6,13,0.0,16148168401,E=1e-05
+trajectory,k=1,14,0.8488856249193634,16383,E=1e-05
+trajectory,k=6,14,0.0,113037178808,E=1e-05
+trajectory,k=1,15,0.720599598126696,32767,E=1e-05
+trajectory,k=6,15,0.0,791260251657,E=1e-05
+trajectory,k=1,16,0.5192585881825477,65535,E=1e-05
+trajectory,k=6,16,0.0,5538821761600,E=1e-05
+trajectory,k=1,17,0.2696267851065186,131071,E=1e-05
+trajectory,k=6,17,0.0,38771752331201,E=1e-05
+trajectory,k=1,18,0.07269787626084433,262143,E=1e-05
+trajectory,k=6,18,0.0,271402266318408,E=1e-05
+trajectory,k=1,19,0.005284928363024904,524287,E=1e-05
+trajectory,k=6,19,0.0,1899815864228857,E=1e-05
+trajectory,k=1,20,2.7930188497627065e-05,1048575,E=1e-05
+trajectory,k=6,20,0.0,13298711049602000,E=1e-05
+cliff,k=1,17,0.2696267851065186,>=3 gens > 0.9 then I < 0.5,E=1e-05
+cliff,k=6,7,0.25345300369633483,>=3 gens > 0.9 then I < 0.5,E=1e-05

@@ -1,0 +1,169 @@
+section,param,metric,value,reference,note
+fuse_length,p=0.01,G_half,69.31471805599453,ln2/p,1a
+fuse_length,p=0.01,S(10*G_half)_theory,0.0009430776260472387,(1-p)^(10*ln2/p) ~ 2^-10,1a
+fuse_length,p=0.001,G_half,693.1471805599452,ln2/p,1a
+fuse_length,p=0.001,S(10*G_half)_theory,0.000973181600200546,(1-p)^(10*ln2/p) ~ 2^-10,1a
+fuse_length,p=0.0001,G_half,6931.471805599453,ln2/p,1a
+fuse_length,p=0.0001,S(10*G_half)_theory,0.0009762240853140049,(1-p)^(10*ln2/p) ~ 2^-10,1a
+fuse_length,p=1e-06,G_half,693147.1805599453,ln2/p,1a
+fuse_length,p=1e-06,S(10*G_half)_theory,0.0009765591153012441,(1-p)^(10*ln2/p) ~ 2^-10,1a
+fuse_sim,p=0.01,mean_T,99.9043,1/p=100.0,1b
+fuse_sim,p=0.01,median_T,69.5,~ln2/p,1b
+fuse_sim,p=0.01,max_T,956,~ln(N)/p,1b
+fuse_sim,p=0.01,frac_T>10*G_half,0.0007,2^-10=0.0009765625,1b
+fuse_sim,p=0.01,censored_at_20M,0,"cap=20,000,000",1b
+fuse_sim,p=0.01,all_dead_within_cap,1,1=yes,1b
+fuse_sim,p=0.001,mean_T,977.4654,1/p=1000.0,1b
+fuse_sim,p=0.001,median_T,682.0,~ln2/p,1b
+fuse_sim,p=0.001,max_T,9200,~ln(N)/p,1b
+fuse_sim,p=0.001,frac_T>10*G_half,0.0006,2^-10=0.0009765625,1b
+fuse_sim,p=0.001,censored_at_20M,0,"cap=20,000,000",1b
+fuse_sim,p=0.001,all_dead_within_cap,1,1=yes,1b
+fuse_sim,p=0.0001,mean_T,10165.1617,1/p=10000.0,1b
+fuse_sim,p=0.0001,median_T,7013.5,~ln2/p,1b
+fuse_sim,p=0.0001,max_T,92892,~ln(N)/p,1b
+fuse_sim,p=0.0001,frac_T>10*G_half,0.0012,2^-10=0.0009765625,1b
+fuse_sim,p=0.0001,censored_at_20M,0,"cap=20,000,000",1b
+fuse_sim,p=0.0001,all_dead_within_cap,1,1=yes,1b
+fuse_sim,p=1e-06,mean_T,994987.9093,1/p=1000000.0,1b
+fuse_sim,p=1e-06,median_T,697580.0,~ln2/p,1b
+fuse_sim,p=1e-06,max_T,8404470,~ln(N)/p,1b
+fuse_sim,p=1e-06,frac_T>10*G_half,0.001,2^-10=0.0009765625,1b
+fuse_sim,p=1e-06,censored_at_20M,0,"cap=20,000,000",1b
+fuse_sim,p=1e-06,all_dead_within_cap,1,1=yes,1b
+gamblers_ruin,rho=0.1,P_hit50_sim,0.0,exact=1.3929555690985384e-24,"N=20,000"
+gamblers_ruin,rho=0.1,P_hit50_exact,1.3929555690985384e-24,"(1-q^25)/(1-q^50), q=(1-rho)/rho",exponentially fatal
+gamblers_ruin,rho=0.1,q^25,7.178979876918526e+23,((1-rho)/rho)^25,exponentially fatal
+gamblers_ruin,rho=0.3,P_hit50_sim,0.0,exact=6.318010849586415e-10,"N=20,000"
+gamblers_ruin,rho=0.3,P_hit50_exact,6.318010849586415e-10,"(1-q^25)/(1-q^50), q=(1-rho)/rho",exponentially fatal
+gamblers_ruin,rho=0.3,q^25,1582776641.5337198,((1-rho)/rho)^25,exponentially fatal
+gamblers_ruin,rho=0.45,P_hit50_sim,0.0068,exact=0.006582297418564198,"N=20,000"
+gamblers_ruin,rho=0.45,P_hit50_exact,0.006582297418564198,"(1-q^25)/(1-q^50), q=(1-rho)/rho",exponentially fatal
+gamblers_ruin,rho=0.45,q^25,150.92263983387897,((1-rho)/rho)^25,exponentially fatal
+gamblers_ruin,rho=0.49,P_hit50_sim,0.26905,exact=0.2689152009602089,"N=20,000"
+gamblers_ruin,rho=0.49,P_hit50_exact,0.2689152009602089,"(1-q^25)/(1-q^50), q=(1-rho)/rho",CLIFF
+gamblers_ruin,rho=0.49,q^25,2.7186443772212376,((1-rho)/rho)^25,CLIFF
+gamblers_ruin,rho=0.5,P_hit50_sim,0.49735,exact=0.5,"N=20,000"
+gamblers_ruin,rho=0.5,P_hit50_exact,0.5,"(1-q^25)/(1-q^50), q=(1-rho)/rho",CLIFF
+gamblers_ruin,rho=0.5,q^25,1.0,((1-rho)/rho)^25,CLIFF
+gamblers_ruin,rho=0.51,P_hit50_sim,0.72655,exact=0.7310847990397913,"N=20,000"
+gamblers_ruin,rho=0.51,P_hit50_exact,0.7310847990397913,"(1-q^25)/(1-q^50), q=(1-rho)/rho",CLIFF
+gamblers_ruin,rho=0.51,q^25,0.367830382075243,((1-rho)/rho)^25,CLIFF
+gamblers_ruin,rho=0.6,P_hit50_sim,1.0,exact=0.9999603994402242,"N=20,000"
+gamblers_ruin,rho=0.6,P_hit50_exact,0.9999603994402242,"(1-q^25)/(1-q^50), q=(1-rho)/rho",almost-sure climb
+gamblers_ruin,rho=0.6,q^25,3.96021280423662e-05,((1-rho)/rho)^25,almost-sure climb
+gamblers_ruin,rho=0.9,P_hit50_sim,1.0,exact=1.0,"N=20,000"
+gamblers_ruin,rho=0.9,P_hit50_exact,1.0,"(1-q^25)/(1-q^50), q=(1-rho)/rho",almost-sure climb
+gamblers_ruin,rho=0.9,q^25,1.3929555690985278e-24,((1-rho)/rho)^25,almost-sure climb
+verifier_gate,"theta=0,rho=0.1",frac_hit_99,0.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=0,rho=0.1",frac_dead_by_cap,0.1172,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=0,rho=0.1",frac_censored,0.8828,alive at cap,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=0,rho=0.1",mean_gens_lived,188675.892,capped at 200k,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=0,rho=0.5",frac_hit_99,0.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=0,rho=0.5",frac_dead_by_cap,0.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=0,rho=0.5",frac_censored,1.0,alive at cap,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=0,rho=0.5",mean_gens_lived,200000.0,capped at 200k,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=0,rho=1",frac_hit_99,0.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=0,rho=1",frac_dead_by_cap,0.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=0,rho=1",frac_censored,1.0,alive at cap,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=0,rho=1",mean_gens_lived,200000.0,capped at 200k,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=0,rho=2",frac_hit_99,0.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=0,rho=2",frac_dead_by_cap,0.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=0,rho=2",frac_censored,1.0,alive at cap,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=0,rho=2",mean_gens_lived,200000.0,capped at 200k,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=30,rho=0.1",frac_hit_99,0.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=30,rho=0.1",frac_dead_by_cap,1.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=30,rho=0.1",frac_censored,0.0,alive at cap,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=30,rho=0.1",mean_gens_lived,5195.6952,capped at 200k,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=30,rho=0.5",frac_hit_99,0.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=30,rho=0.5",frac_dead_by_cap,1.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=30,rho=0.5",frac_censored,0.0,alive at cap,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=30,rho=0.5",mean_gens_lived,7225.8958,capped at 200k,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=30,rho=1",frac_hit_99,0.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=30,rho=1",frac_dead_by_cap,0.0792,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=30,rho=1",frac_censored,0.9208,alive at cap,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=30,rho=1",mean_gens_lived,192190.4948,capped at 200k,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=30,rho=2",frac_hit_99,0.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=30,rho=2",frac_dead_by_cap,0.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=30,rho=2",frac_censored,1.0,alive at cap,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=30,rho=2",mean_gens_lived,200000.0,capped at 200k,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=60,rho=0.1",frac_hit_99,0.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=60,rho=0.1",frac_dead_by_cap,1.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=60,rho=0.1",frac_censored,0.0,alive at cap,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=60,rho=0.1",mean_gens_lived,5114.6192,capped at 200k,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=60,rho=0.5",frac_hit_99,0.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=60,rho=0.5",frac_dead_by_cap,1.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=60,rho=0.5",frac_censored,0.0,alive at cap,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=60,rho=0.5",mean_gens_lived,5171.9878,capped at 200k,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=60,rho=1",frac_hit_99,0.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=60,rho=1",frac_dead_by_cap,1.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=60,rho=1",frac_censored,0.0,alive at cap,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=60,rho=1",mean_gens_lived,5368.716,capped at 200k,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=60,rho=2",frac_hit_99,0.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=60,rho=2",frac_dead_by_cap,1.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=60,rho=2",frac_censored,0.0,alive at cap,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=60,rho=2",mean_gens_lived,7262.762,capped at 200k,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=80,rho=0.1",frac_hit_99,0.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=80,rho=0.1",frac_dead_by_cap,1.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=80,rho=0.1",frac_censored,0.0,alive at cap,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=80,rho=0.1",mean_gens_lived,5074.8934,capped at 200k,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=80,rho=0.5",frac_hit_99,0.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=80,rho=0.5",frac_dead_by_cap,1.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=80,rho=0.5",frac_censored,0.0,alive at cap,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=80,rho=0.5",mean_gens_lived,5092.6604,capped at 200k,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=80,rho=1",frac_hit_99,0.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=80,rho=1",frac_dead_by_cap,1.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=80,rho=1",frac_censored,0.0,alive at cap,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=80,rho=1",mean_gens_lived,5112.4388,capped at 200k,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=80,rho=2",frac_hit_99,0.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=80,rho=2",frac_dead_by_cap,1.0,Monte Carlo,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=80,rho=2",frac_censored,0.0,alive at cap,"start=90, cap=200,000, N=5,000"
+verifier_gate,"theta=80,rho=2",mean_gens_lived,5148.9658,capped at 200k,"start=90, cap=200,000, N=5,000"
+gate_exact,"theta=0,rho=0.1",P_hit99_uncapped_exact,6.4210769227502764e-21,decimal-80 thomas/gambler solve,3b
+gate_exact,"theta=0,rho=0.1",T99_gens_exact,1564844.512893567,"poisson solve, uncapped",3b
+gate_exact,"theta=0,rho=0.1",T0_gens_exact,1564844.512893567,"poisson solve, uncapped",3b
+gate_exact,"theta=0,rho=0.5",P_hit99_uncapped_exact,1.309908492441444e-14,decimal-80 thomas/gambler solve,3b
+gate_exact,"theta=0,rho=0.5",T99_gens_exact,8.302648951525878e+18,"poisson solve, uncapped",3b
+gate_exact,"theta=0,rho=0.5",T0_gens_exact,8.302648951525987e+18,"poisson solve, uncapped",3b
+gate_exact,"theta=0,rho=1",P_hit99_uncapped_exact,0.9898946401896179,decimal-80 thomas/gambler solve,3b
+gate_exact,"theta=0,rho=1",T99_gens_exact,1.2942186001351026e+29,"poisson solve, uncapped",3b
+gate_exact,"theta=0,rho=1",T0_gens_exact,1.2807249068018713e+31,"poisson solve, uncapped",3b
+gate_exact,"theta=0,rho=2",P_hit99_uncapped_exact,1.0,decimal-80 thomas/gambler solve,3b
+gate_exact,"theta=0,rho=2",T99_gens_exact,8.571270005136994e+16,"poisson solve, uncapped",3b
+gate_exact,"theta=0,rho=2",T0_gens_exact,2.5900370869776295e+48,"poisson solve, uncapped",3b
+gate_exact,"theta=30,rho=0.1",P_hit99_uncapped_exact,6.4210769227502764e-21,decimal-80 thomas/gambler solve,3b
+gate_exact,"theta=30,rho=0.1",T99_gens_exact,5214.205141678687,"poisson solve, uncapped",3b
+gate_exact,"theta=30,rho=0.1",T0_gens_exact,5214.205141678687,"poisson solve, uncapped",3b
+gate_exact,"theta=30,rho=0.5",P_hit99_uncapped_exact,1.3099084924414125e-14,decimal-80 thomas/gambler solve,3b
+gate_exact,"theta=30,rho=0.5",T99_gens_exact,7233.0069664566345,"poisson solve, uncapped",3b
+gate_exact,"theta=30,rho=0.5",T0_gens_exact,7233.00696645673,"poisson solve, uncapped",3b
+gate_exact,"theta=30,rho=1",P_hit99_uncapped_exact,7.11635192180677e-12,decimal-80 thomas/gambler solve,3b
+gate_exact,"theta=30,rho=1",T99_gens_exact,2609575.1700383215,"poisson solve, uncapped",3b
+gate_exact,"theta=30,rho=1",T0_gens_exact,2609575.170056893,"poisson solve, uncapped",3b
+gate_exact,"theta=30,rho=2",P_hit99_uncapped_exact,0.008053402248083343,decimal-80 thomas/gambler solve,3b
+gate_exact,"theta=30,rho=2",T99_gens_exact,690278494710919.5,"poisson solve, uncapped",3b
+gate_exact,"theta=30,rho=2",T0_gens_exact,695882718157734.1,"poisson solve, uncapped",3b
+gate_exact,"theta=60,rho=0.1",P_hit99_uncapped_exact,6.4210769227502764e-21,decimal-80 thomas/gambler solve,3b
+gate_exact,"theta=60,rho=0.1",T99_gens_exact,5098.6546241758,"poisson solve, uncapped",3b
+gate_exact,"theta=60,rho=0.1",T0_gens_exact,5098.6546241758,"poisson solve, uncapped",3b
+gate_exact,"theta=60,rho=0.5",P_hit99_uncapped_exact,1.3099084924414125e-14,decimal-80 thomas/gambler solve,3b
+gate_exact,"theta=60,rho=0.5",T99_gens_exact,5180.479769614685,"poisson solve, uncapped",3b
+gate_exact,"theta=60,rho=0.5",T0_gens_exact,5180.479769614754,"poisson solve, uncapped",3b
+gate_exact,"theta=60,rho=1",P_hit99_uncapped_exact,7.116351921786809e-12,decimal-80 thomas/gambler solve,3b
+gate_exact,"theta=60,rho=1",T99_gens_exact,5355.017578543107,"poisson solve, uncapped",3b
+gate_exact,"theta=60,rho=1",T0_gens_exact,5355.017578581928,"poisson solve, uncapped",3b
+gate_exact,"theta=60,rho=2",P_hit99_uncapped_exact,4.19393009496851e-09,decimal-80 thomas/gambler solve,3b
+gate_exact,"theta=60,rho=2",T99_gens_exact,7250.851821289852,"poisson solve, uncapped",3b
+gate_exact,"theta=60,rho=2",T0_gens_exact,7250.851852145175,"poisson solve, uncapped",3b
+gate_exact,"theta=80,rho=0.1",P_hit99_uncapped_exact,6.4210769227502764e-21,decimal-80 thomas/gambler solve,3b
+gate_exact,"theta=80,rho=0.1",T99_gens_exact,5084.913292762027,"poisson solve, uncapped",3b
+gate_exact,"theta=80,rho=0.1",T0_gens_exact,5084.913292762027,"poisson solve, uncapped",3b
+gate_exact,"theta=80,rho=0.5",P_hit99_uncapped_exact,1.3099084924346573e-14,decimal-80 thomas/gambler solve,3b
+gate_exact,"theta=80,rho=0.5",T99_gens_exact,5095.176500434583,"poisson solve, uncapped",3b
+gate_exact,"theta=80,rho=0.5",T0_gens_exact,5095.176500434652,"poisson solve, uncapped",3b
+gate_exact,"theta=80,rho=1",P_hit99_uncapped_exact,7.116351837225696e-12,decimal-80 thomas/gambler solve,3b
+gate_exact,"theta=80,rho=1",T99_gens_exact,5110.421050552795,"poisson solve, uncapped",3b
+gate_exact,"theta=80,rho=1",T0_gens_exact,5110.421050589876,"poisson solve, uncapped",3b
+gate_exact,"theta=80,rho=2",P_hit99_uncapped_exact,4.193740203336037e-09,decimal-80 thomas/gambler solve,3b
+gate_exact,"theta=80,rho=2",T99_gens_exact,5152.7565795153,"poisson solve, uncapped",3b
+gate_exact,"theta=80,rho=2",T0_gens_exact,5152.75660157036,"poisson solve, uncapped",3b
